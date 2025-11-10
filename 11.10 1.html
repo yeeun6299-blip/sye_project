@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS3 Font Property</title>
+    <style>
+        .box {
+            width: 100px; 
+            height: 100px;
+            position: absolute; 
+            border: 1px solid black; /* 박스 구분을 위해 테두리 추가 */
+        }
+
+        /* 첫 번째 박스 (빨간색) */
+        .box:nth-child(1) { 
+            background-color: red; 
+            top: 0;
+            left: 0;
+        }
+
+        /* 두 번째 박스 (녹색) */
+        .box:nth-child(2) { 
+            background-color: green; 
+            top: 100px; 
+            left: 0;
+        }
+
+        /* 세 번째 박스 (파란색) - 기존 박스 중 하나 */
+        .box:nth-child(3) { 
+            background-color: blue; 
+            top: 200px; 
+            left: 0;
+        }
+
+        /* 네 번째 박스 (추가된 파란색 박스) */
+        .box:nth-child(4) {
+            background-color: blue; /* 기존 파랑과 구분되도록 다른 파란색 계열 사용 */
+            top: 0px;   /* 페이지 상단에서 50px 아래 */
+            left: 150px; /* 페이지 왼쪽에서 150px 오른쪽 */
+            width: 100px; /* 크기를 다르게 해서 구분 */
+            height: 100px;
+            /* z-index를 주어 다른 박스와 겹쳐도 잘 보이게 할 수 있습니다. */
+            /* z-index: 10; */ 
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div> <div class="box"></div> <div class="box"></div> <div class="box"></div> </body>
+</html>
