@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Page Background Image</title>
+    <style>
+        /* 1. body의 기본 마진 제거 (브라우저마다 다를 수 있는 여백을 없애 페이지를 완전히 채움) */
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            /* 2. 브라우저 뷰포트 너비와 높이를 100%로 설정 */
+            width: 100vw;   /* 뷰포트 너비의 100% */
+            height: 100vh;  /* 뷰포트 높이의 100% */
+            
+            /* 배경 이미지 설정 */
+            background-image: url('https://s1.best-wallpaper.net/wallpaper/m/1403/winter-snow-sun-light-forest-trees-sunset_m.webp');
+            
+            /* 3. 이미지가 반복되지 않도록 설정 */
+            background-repeat: no-repeat; 
+            
+            /* 4. 이미지가 요소(box)를 가득 채우되, 비율을 유지하도록 설정 */
+            background-size: cover; 
+            
+            /* 5. 이미지가 중앙에 위치하도록 설정 */
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div> 
+</body>
+</html>
